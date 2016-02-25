@@ -7,13 +7,13 @@ namespace ShagManager.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class sdata : IMigrationMetadata
+    public sealed partial class changes : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(sdata));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(changes));
         
         string IMigrationMetadata.Id
         {
-            get { return "201602240357412_sdata"; }
+            get { return "201602251457497_changes"; }
         }
         
         string IMigrationMetadata.Source

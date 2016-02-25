@@ -32,6 +32,6 @@ namespace ShagModel
         public string ICNumber { get; set; }
         public DateTime ICGettingDay { get; set; }
         public string ICGettingPlace { get; set; }
-        public DateTime BirthCardNumber { get; set; }
+        public string BirthCardNumber { get; set; }
     }
 }

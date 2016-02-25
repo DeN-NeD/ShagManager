@@ -40,3 +40,17 @@ C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\D
 C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\EntityFramework.xml
 C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\obj\Debug\ShagCheck.csprojResolveAssemblyReference.cache
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagCheck.exe.config
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\obj\Debug\ShagCheck.exe
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\obj\Debug\ShagCheck.pdb
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagCheck.exe
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagCheck.pdb
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\EntityFramework.dll
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagManager.dll
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagModel.dll
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagManager.pdb
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagModel.pdb
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\EntityFramework.xml
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagCheck\obj\Debug\ShagCheck.csprojResolveAssemblyReference.cache

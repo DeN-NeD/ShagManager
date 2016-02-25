@@ -25,5 +25,6 @@ namespace ShagModel
         //отношения родительских и дочерних задач
         public virtual DayTask ParentTask { get; set; }
         public virtual ICollection<DayTask> ChildTask { get; set; }
+        public virtual Manager Manager { get; set; }
     }
 }

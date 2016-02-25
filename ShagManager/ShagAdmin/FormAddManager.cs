@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ShagAdmin
 {
-    public partial class Form2 : Form
+    public partial class FormAddManager : Form
     {
-        public Form2()
+        public FormAddManager()
         {
             InitializeComponent();
         }

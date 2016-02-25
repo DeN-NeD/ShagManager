@@ -51,17 +51,9 @@
   <ItemGroup>
     <Compile Include="Configuration\ServiceInitializer.cs" />
     <Compile Include="ManagerContext.cs" />
-    <Compile Include="Migrations\201602231338102_InitialCreate.cs" />
-    <Compile Include="Migrations\201602231338102_InitialCreate.Designer.cs">
-      <DependentUpon>201602231338102_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201602231341164_fdata.cs" />
-    <Compile Include="Migrations\201602231341164_fdata.Designer.cs">
-      <DependentUpon>201602231341164_fdata.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201602240357412_sdata.cs" />
-    <Compile Include="Migrations\201602240357412_sdata.Designer.cs">
-      <DependentUpon>201602240357412_sdata.cs</DependentUpon>
+    <Compile Include="Migrations\201602251457497_changes.cs" />
+    <Compile Include="Migrations\201602251457497_changes.Designer.cs">
+      <DependentUpon>201602251457497_changes.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,14 +72,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201602231338102_InitialCreate.resx">
-      <DependentUpon>201602231338102_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201602231341164_fdata.resx">
-      <DependentUpon>201602231341164_fdata.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201602240357412_sdata.resx">
-      <DependentUpon>201602240357412_sdata.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201602251457497_changes.resx">
+      <DependentUpon>201602251457497_changes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

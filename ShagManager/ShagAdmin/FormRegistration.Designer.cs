@@ -1,6 +1,6 @@
 ﻿namespace ShagAdmin
 {
-    partial class Form1
+    partial class FormRegistration
     {
         /// <summary>
         /// Required designer variable.
@@ -28,48 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AccessList = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Password = new System.Windows.Forms.TextBox();
-            this.Login = new System.Windows.Forms.TextBox();
+            this.comboBoxAccessList = new System.Windows.Forms.ComboBox();
+            this.buttonOk = new System.Windows.Forms.Button();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // AccessList
+            // comboBoxAccessList
             // 
-            this.AccessList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AccessList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.AccessList.FormattingEnabled = true;
-            this.AccessList.Location = new System.Drawing.Point(131, 132);
-            this.AccessList.Name = "AccessList";
-            this.AccessList.Size = new System.Drawing.Size(121, 24);
-            this.AccessList.TabIndex = 6;
+            this.comboBoxAccessList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxAccessList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBoxAccessList.FormattingEnabled = true;
+            this.comboBoxAccessList.Location = new System.Drawing.Point(131, 132);
+            this.comboBoxAccessList.Name = "comboBoxAccessList";
+            this.comboBoxAccessList.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxAccessList.TabIndex = 6;
             // 
-            // button1
+            // buttonOk
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(284, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Ок";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.buttonOk.Location = new System.Drawing.Point(284, 133);
+            this.buttonOk.Name = "buttonOk";
+            this.buttonOk.Size = new System.Drawing.Size(75, 23);
+            this.buttonOk.TabIndex = 18;
+            this.buttonOk.Text = "ОК";
+            this.buttonOk.UseVisualStyleBackColor = true;
             // 
-            // Password
+            // textBoxPassword
             // 
-            this.Password.Location = new System.Drawing.Point(131, 106);
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(228, 20);
-            this.Password.TabIndex = 17;
+            this.textBoxPassword.Location = new System.Drawing.Point(131, 106);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(228, 20);
+            this.textBoxPassword.TabIndex = 17;
             // 
-            // Login
+            // textBoxLogin
             // 
-            this.Login.Location = new System.Drawing.Point(131, 68);
-            this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(228, 20);
-            this.Login.TabIndex = 16;
+            this.textBoxLogin.Location = new System.Drawing.Point(131, 68);
+            this.textBoxLogin.Name = "textBoxLogin";
+            this.textBoxLogin.Size = new System.Drawing.Size(228, 20);
+            this.textBoxLogin.TabIndex = 16;
             // 
             // label3
             // 
@@ -101,21 +101,23 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Регистрация учетной записи";
             // 
-            // Form1
+            // FormRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(501, 278);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Password);
-            this.Controls.Add(this.Login);
+            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.ClientSize = new System.Drawing.Size(470, 193);
+            this.Controls.Add(this.buttonOk);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.AccessList);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.comboBoxAccessList);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "FormRegistration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Регистрация";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,10 +125,10 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox AccessList;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox Password;
-        private System.Windows.Forms.TextBox Login;
+        private System.Windows.Forms.ComboBox comboBoxAccessList;
+        private System.Windows.Forms.Button buttonOk;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
