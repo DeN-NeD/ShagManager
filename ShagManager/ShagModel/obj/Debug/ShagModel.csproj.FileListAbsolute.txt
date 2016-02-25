@@ -10,3 +10,9 @@ C:\Users\ktoloc\Documents\GitHub\ShagManager\ShagManager\ShagModel\bin\Debug\Sha
 C:\Users\ktoloc\Documents\GitHub\ShagManager\ShagManager\ShagModel\obj\Debug\ShagModel.csprojResolveAssemblyReference.cache
 C:\Users\ktoloc\Documents\GitHub\ShagManager\ShagManager\ShagModel\obj\Debug\ShagModel.dll
 C:\Users\ktoloc\Documents\GitHub\ShagManager\ShagManager\ShagModel\obj\Debug\ShagModel.pdb
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagModel\bin\Debug\ShagModel.dll.config
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagModel\bin\Debug\ShagModel.dll
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagModel\bin\Debug\ShagModel.pdb
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagModel\obj\Debug\ShagModel.csprojResolveAssemblyReference.cache
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagModel\obj\Debug\ShagModel.dll
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagModel\obj\Debug\ShagModel.pdb

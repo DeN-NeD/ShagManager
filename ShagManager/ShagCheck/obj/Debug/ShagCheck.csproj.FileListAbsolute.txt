@@ -26,3 +26,17 @@ C:\Users\Lighto\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\Sha
 C:\Users\Lighto\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagModel.pdb
 C:\Users\ktoloc\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagModel.dll
 C:\Users\ktoloc\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagModel.pdb
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagCheck.exe.config
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\obj\Debug\ShagCheck.exe
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\obj\Debug\ShagCheck.pdb
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagCheck.exe
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagCheck.pdb
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\EntityFramework.dll
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagManager.dll
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagModel.dll
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagManager.pdb
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\ShagModel.pdb
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\EntityFramework.xml
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ДайтхеА\Documents\GitHub\ShagManager\ShagManager\ShagCheck\obj\Debug\ShagCheck.csprojResolveAssemblyReference.cache
