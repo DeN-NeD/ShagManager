@@ -16,7 +16,9 @@ namespace ShagAdmin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormRegistration());
+            //Application.Run(new ContactForm());
+           //Application.Run(new FormRegistration()); 
+            Application.Run(new FormAddManager());
         }
     }
 }

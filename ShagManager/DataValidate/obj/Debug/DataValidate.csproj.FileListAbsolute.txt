@@ -1,0 +1,13 @@
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\bin\Debug\DataValidate.dll
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\bin\Debug\DataValidate.pdb
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\obj\Debug\DataValidate.csprojResolveAssemblyReference.cache
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\obj\Debug\DataValidate.dll
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\obj\Debug\DataValidate.pdb
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\bin\Debug\EntityFramework.dll
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\bin\Debug\ShagManager.dll
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\bin\Debug\ShagModel.dll
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\bin\Debug\ShagManager.pdb
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\bin\Debug\ShagModel.pdb
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\bin\Debug\EntityFramework.xml
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\DataValidate\bin\Debug\EntityFramework.SqlServer.xml

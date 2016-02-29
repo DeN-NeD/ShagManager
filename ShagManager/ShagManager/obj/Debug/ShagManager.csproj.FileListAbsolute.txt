@@ -59,3 +59,4 @@ C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagManager\obj
 C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagManager\obj\Debug\ShagManager.pdb
 C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagManager\obj\Debug\ShagManager.Migrations.changes.resources
 C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagManager\obj\Debug\ShagManager.csproj.GenerateResource.Cache
+C:\Users\КажиевС\Documents\GitHub\ShagManager\ShagManager\ShagManager\obj\Debug\ShagManager.Migrations.Mig1.resources

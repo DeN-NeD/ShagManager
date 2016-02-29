@@ -10,6 +10,7 @@ namespace DataValidate
 {
     public class PassportValidate
     {
+
         //http://yvision.kz/post/114938
         public bool CodeValidate(string IIN, bool isIndividual, DateTime birthday, bool sex, bool isResident)
         {

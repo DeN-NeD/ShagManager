@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBoxAccessList
@@ -42,7 +43,7 @@
             this.comboBoxAccessList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxAccessList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.comboBoxAccessList.FormattingEnabled = true;
-            this.comboBoxAccessList.Location = new System.Drawing.Point(131, 132);
+            this.comboBoxAccessList.Location = new System.Drawing.Point(115, 73);
             this.comboBoxAccessList.Name = "comboBoxAccessList";
             this.comboBoxAccessList.Size = new System.Drawing.Size(121, 24);
             this.comboBoxAccessList.TabIndex = 6;
@@ -50,23 +51,24 @@
             // buttonOk
             // 
             this.buttonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.buttonOk.Location = new System.Drawing.Point(284, 133);
+            this.buttonOk.Location = new System.Drawing.Point(115, 103);
             this.buttonOk.Name = "buttonOk";
-            this.buttonOk.Size = new System.Drawing.Size(75, 23);
+            this.buttonOk.Size = new System.Drawing.Size(75, 34);
             this.buttonOk.TabIndex = 18;
             this.buttonOk.Text = "ОК";
             this.buttonOk.UseVisualStyleBackColor = true;
+            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(131, 106);
+            this.textBoxPassword.Location = new System.Drawing.Point(115, 44);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(228, 20);
             this.textBoxPassword.TabIndex = 17;
             // 
             // textBoxLogin
             // 
-            this.textBoxLogin.Location = new System.Drawing.Point(131, 68);
+            this.textBoxLogin.Location = new System.Drawing.Point(115, 9);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(228, 20);
             this.textBoxLogin.TabIndex = 16;
@@ -75,49 +77,62 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(78, 68);
+            this.label3.Location = new System.Drawing.Point(62, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 17);
+            this.label3.Size = new System.Drawing.Size(51, 17);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Login:";
+            this.label3.Text = "Логин:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(52, 106);
+            this.label2.Location = new System.Drawing.Point(52, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(61, 17);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Password:";
+            this.label2.Text = "Пароль:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label1.Location = new System.Drawing.Point(117, 25);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.Location = new System.Drawing.Point(3, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 22);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Регистрация учетной записи";
+            this.label1.Size = new System.Drawing.Size(110, 17);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Права доступа:";
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.buttonCancel.Location = new System.Drawing.Point(214, 103);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(75, 34);
+            this.buttonCancel.TabIndex = 20;
+            this.buttonCancel.Text = "Отмена";
+            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // FormRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(470, 193);
+            this.ClientSize = new System.Drawing.Size(386, 139);
+            this.Controls.Add(this.buttonCancel);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBoxAccessList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormRegistration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Регистрация";
+      
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,6 +147,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonCancel;
     }
 }
 

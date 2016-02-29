@@ -59,7 +59,6 @@
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBoxPhone1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBoxPhone2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBoxEmail, 1, 2);
@@ -68,6 +67,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -86,6 +86,7 @@
             // textBoxCountry
             // 
             this.textBoxCountry.Location = new System.Drawing.Point(156, 258);
+            this.textBoxCountry.MaxLength = 50;
             this.textBoxCountry.Name = "textBoxCountry";
             this.textBoxCountry.Size = new System.Drawing.Size(297, 23);
             this.textBoxCountry.TabIndex = 10;
@@ -129,6 +130,7 @@
             // textBoxPhone1
             // 
             this.textBoxPhone1.Location = new System.Drawing.Point(156, 3);
+            this.textBoxPhone1.MaxLength = 14;
             this.textBoxPhone1.Multiline = true;
             this.textBoxPhone1.Name = "textBoxPhone1";
             this.textBoxPhone1.Size = new System.Drawing.Size(297, 22);
@@ -137,6 +139,7 @@
             // textBoxPhone2
             // 
             this.textBoxPhone2.Location = new System.Drawing.Point(156, 54);
+            this.textBoxPhone2.MaxLength = 14;
             this.textBoxPhone2.Name = "textBoxPhone2";
             this.textBoxPhone2.Size = new System.Drawing.Size(297, 23);
             this.textBoxPhone2.TabIndex = 7;
@@ -144,6 +147,7 @@
             // textBoxEmail
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(156, 105);
+            this.textBoxEmail.MaxLength = 8;
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(297, 23);
             this.textBoxEmail.TabIndex = 8;
@@ -151,6 +155,7 @@
             // textBoxAdress
             // 
             this.textBoxAdress.Location = new System.Drawing.Point(156, 156);
+            this.textBoxAdress.MaxLength = 200;
             this.textBoxAdress.Name = "textBoxAdress";
             this.textBoxAdress.Size = new System.Drawing.Size(297, 23);
             this.textBoxAdress.TabIndex = 9;
@@ -191,6 +196,7 @@
             this.buttonOk.TabIndex = 0;
             this.buttonOk.Text = "OK";
             this.buttonOk.UseVisualStyleBackColor = true;
+            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
             // buttonCancel
             // 
@@ -198,8 +204,9 @@
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(78, 44);
             this.buttonCancel.TabIndex = 1;
-            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -253,12 +260,12 @@
         private System.Windows.Forms.TextBox textBoxPhone2;
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.TextBox textBoxAdress;
-        private System.Windows.Forms.TextBox textBoxCountry;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button buttonOk;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.CheckBox checkBoxIsResident;
+        private System.Windows.Forms.TextBox textBoxCountry;
     }
 }

@@ -33,5 +33,6 @@ namespace ShagModel
         public DateTime ICGettingDay { get; set; }
         public string ICGettingPlace { get; set; }
         public string BirthCardNumber { get; set; }
+        public bool isIndividual { get; set; }
     }
 }
