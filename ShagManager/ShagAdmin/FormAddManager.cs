@@ -122,7 +122,7 @@ namespace ShagAdmin
                 return false;
             }
             //Номер удостоверения 
-            if (string.IsNullOrWhiteSpace(textBoxICNumber.Text) || textBoxICNumber.Text.Trim().Length != 9)
+            if (string.IsNullOrWhiteSpace(textBoxICNumber.Text) || textBoxICNumber.Text.Trim().Length != 12)
             {
                 validate = ManagerValidation.ICNumberNotCorrect;
                 return false;
