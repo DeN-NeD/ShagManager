@@ -34,6 +34,8 @@ namespace ShagAdmin
         {
             InitializeComponent();
             currentCredential = credential;
+            textBoxLogin.Text = currentCredential.Login;
+            textBoxPassword.Text = currentCredential.Password;
             mode = WindowsMode.EDIT;
             LoadData();
         }
@@ -45,10 +47,10 @@ namespace ShagAdmin
                             select c.AccessName).ToListAsync();
                 comboBoxAccessList.DataSource = query;
                 //Есть режим редактирования: использовать предыдущие права
-                //if (mode == WindowsMode.EDIT)
-                //{
-                //    comboBoxAccessList.SelectedValue = currentCredential.AccessList.AccessName;
-                //}
+                if (mode == WindowsMode.EDIT)
+                {
+                    comboBoxAccessList.SelectedItem = currentCredential.AccessList.AccessName;
+                }
             }
         }
 

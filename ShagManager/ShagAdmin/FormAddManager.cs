@@ -70,69 +70,75 @@ namespace ShagAdmin
             
         }
         private bool CheckData()
-        {
-           // иин
-            if (string.IsNullOrWhiteSpace(textBoxIIN.Text) || textBoxIIN.Text.Trim().Length!=12)
-            {
-                validate = ManagerValidation.IINNotCorrect;
-            }
-           //имя
+        {   
+            //Настоящее время
+            DateTime current = DateTime.Now;
+            //имя
             if (string.IsNullOrWhiteSpace(textBoxFirstName.Text))
             {
-                validate = ManagerValidation.NameEmpty;            
+                validate = ManagerValidation.NameEmpty;
+                return false;
             }
             //фамилия
             if (string.IsNullOrWhiteSpace(textBoxSecondName.Text))
             {
                 validate = ManagerValidation.SecondNameEmpty;
+                return false;
             }
             //Очество
             if (string.IsNullOrWhiteSpace(textBoxLastName.Text))
             {
                 validate = ManagerValidation.LastNameEmpty;
+                return false;
+            }
+            //ДэйтПикер День Рождения
+            if (current.Year - dateTimePickerBirthDay.Value.Year > 18 && current.Year - dateTimePickerBirthDay.Value.Year < 60)
+            {
+                validate = ManagerValidation.BirthDayNotCorrect;
+                return false;
             }
             //Номер пасспорта
-            if(string.IsNullOrWhiteSpace(textBoxPassportNumber.Text) || textBoxPassportNumber.Text.Trim().Length!=10)
+            if (string.IsNullOrWhiteSpace(textBoxPassportNumber.Text) || textBoxPassportNumber.Text.Trim().Length != 10)
             {
                 validate = ManagerValidation.PassportNumberNotcorrect;
+                return false;
+            }
+            //ДэйтПикер Дата получения пасспорта
+            if (current.Year - dateTimePickerPassportGettingDate.Value.Year > 18 && current.Year - dateTimePickerPassportGettingDate.Value.Year < 60)
+            {
+                validate = ManagerValidation.PassportGettingTimeNotCorrect;
+                return false;
             }
             //Место получения пасспорта
-            if(string.IsNullOrWhiteSpace(textBoxPassportGettingPlace.Text))
+            if (string.IsNullOrWhiteSpace(textBoxPassportGettingPlace.Text))
             {
                 validate = ManagerValidation.PassportGettingPlaceEmpty;
+                return false;
+            }
+           // иин
+            if (string.IsNullOrWhiteSpace(textBoxIIN.Text) || textBoxIIN.Text.Trim().Length!=12)
+            {
+                validate = ManagerValidation.IINNotCorrect;
+                return false;
             }
             //Номер удостоверения 
-            if(string.IsNullOrWhiteSpace(textBoxICNumber.Text) || textBoxICNumber.Text.Trim().Length!=9)
+            if (string.IsNullOrWhiteSpace(textBoxICNumber.Text) || textBoxICNumber.Text.Trim().Length != 9)
             {
                 validate = ManagerValidation.ICNumberNotCorrect;
+                return false;
+            }
+            //ДэйтПикер Дата получения удостовирения личности
+            if (current.Year - dateTimePickerICGettingDate.Value.Year > 16 && current.Year - dateTimePickerICGettingDate.Value.Year < 60)
+            {
+                validate = ManagerValidation.IcNumberGettingDateNotCorrect;
+                return false;
             }
             //Место получения 
             if(string.IsNullOrWhiteSpace(textBoxICGettingPlace.Text))
             {
                 validate = ManagerValidation.ICNumberGettingPlaceNotEmpty;
-            }
-            //настоящее время
-            DateTime current = DateTime.Now;
-            //ДэйтПикер День Рождения
-            if(current.Year-dateTimePickerBirthDay.Value.Year>18 && current.Year-dateTimePickerBirthDay.Value.Year<60)
-            {
-                validate = ManagerValidation.BirthDayNotCorrect;
                 return false;
             }
-            //ДэйтПикер Дата получения пасспорта
-            if(current.Year-dateTimePickerPassportGettingDate.Value.Year>18 && current.Year-dateTimePickerPassportGettingDate.Value.Year<60)
-            {
-                validate = ManagerValidation.PassportGettingTimeNotCorrect;
-                return false;
-            }
-            //ДэйтПикер Дата получения удостовирения личности
-            if(current.Year-dateTimePickerICGettingDate.Value.Year>16 && current.Year-dateTimePickerICGettingDate.Value.Year<60)
-            {
-                validate = ManagerValidation.IcNumberGettingDateNotCorrect;
-                return false;
-            }
-         
-
             //проверка
 
             if (!isContactAdded)
@@ -206,7 +212,7 @@ namespace ShagAdmin
            {
                case WindowsMode.ADD:
                    if (isCredentialAdded)
-                   {
+                   {                      
                        frm = new FormRegistration(credential);
                        result = frm.ShowDialog();
                        if (result == DialogResult.OK)
@@ -220,10 +226,11 @@ namespace ShagAdmin
                        result = frm.ShowDialog();
                        if (result == DialogResult.OK)
                        {
-                           credential = frm.GetResult();
-                           if (credential != null)
+                           credential = frm.GetResult();                      
+                           if (credential!= null)
                            {
                                isCredentialAdded = true;
+                             //  MessageBox.Show(credential.Login);
                            }
                        }
                    }
@@ -351,6 +358,11 @@ namespace ShagAdmin
         private void Notify(string info)
         {
             MessageBox.Show(info, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void FormAddManager_Load(object sender, EventArgs e)
+        {
+
         }
 
        

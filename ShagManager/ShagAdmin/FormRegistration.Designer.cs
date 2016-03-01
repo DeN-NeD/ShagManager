@@ -45,7 +45,7 @@
             this.comboBoxAccessList.FormattingEnabled = true;
             this.comboBoxAccessList.Location = new System.Drawing.Point(115, 73);
             this.comboBoxAccessList.Name = "comboBoxAccessList";
-            this.comboBoxAccessList.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxAccessList.Size = new System.Drawing.Size(228, 24);
             this.comboBoxAccessList.TabIndex = 6;
             // 
             // buttonOk
@@ -132,7 +132,6 @@
             this.Name = "FormRegistration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Регистрация";
-      
             this.ResumeLayout(false);
             this.PerformLayout();
 

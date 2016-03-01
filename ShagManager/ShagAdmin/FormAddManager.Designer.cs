@@ -75,7 +75,7 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.AliceBlue;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.32385F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.67615F));
@@ -174,6 +174,7 @@
             // textBoxPassportNumber
             // 
             this.textBoxPassportNumber.Location = new System.Drawing.Point(211, 208);
+            this.textBoxPassportNumber.MaxLength = 10;
             this.textBoxPassportNumber.Name = "textBoxPassportNumber";
             this.textBoxPassportNumber.Size = new System.Drawing.Size(261, 20);
             this.textBoxPassportNumber.TabIndex = 19;
@@ -196,6 +197,7 @@
             // textBoxICGettingPlace
             // 
             this.textBoxICGettingPlace.Location = new System.Drawing.Point(211, 454);
+            this.textBoxICGettingPlace.MaxLength = 9;
             this.textBoxICGettingPlace.Name = "textBoxICGettingPlace";
             this.textBoxICGettingPlace.Size = new System.Drawing.Size(261, 20);
             this.textBoxICGettingPlace.TabIndex = 25;
@@ -457,8 +459,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormAddManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Создать/Редактировать менеджера";
-          //  ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
+            this.Load += new System.EventHandler(this.FormAddManager_Load);     
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);

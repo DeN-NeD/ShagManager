@@ -53,32 +53,39 @@ namespace ShagAdmin
             return info;
         }
         private bool CheckData()
-        {
-            if (string.IsNullOrWhiteSpace(textBoxAdress.Text))
+        { //Личный телефон
+            if (string.IsNullOrWhiteSpace(textBoxPhone1.Text) && string.IsNullOrWhiteSpace(textBoxPhone2.Text))
             {
+                validate = ContactValidation.PhoneEmpty;
                 return false;
             }
-            if (string.IsNullOrWhiteSpace(textBoxCountry.Text))
+        //Домашний телефон
+            if (string.IsNullOrWhiteSpace(textBoxPhone2.Text) && string.IsNullOrWhiteSpace(textBoxPhone2.Text))
             {
-                validate = ContactValidation.CountryEmpty;
+                validate = ContactValidation.Phone2Empty;
                 return false;
             }
+        //Почтовый адресс
             if (string.IsNullOrWhiteSpace(textBoxEmail.Text))
             {
                 validate = ContactValidation.EmailEmpty;
                 return false;
 
             }
-            if (string.IsNullOrWhiteSpace(textBoxPhone1.Text) && string.IsNullOrWhiteSpace(textBoxPhone2.Text))
+        //Адресс
+            if (string.IsNullOrWhiteSpace(textBoxAdress.Text))
             {
-                validate = ContactValidation.PhoneEmpty;
+                validate = ContactValidation.AddressEmpty;
                 return false;
             }
-            if (string.IsNullOrWhiteSpace(textBoxPhone2.Text) && string.IsNullOrWhiteSpace(textBoxPhone2.Text))
+            //Страна
+            if (string.IsNullOrWhiteSpace(textBoxCountry.Text))
             {
-                validate = ContactValidation.Phone2Empty;
+                validate = ContactValidation.CountryEmpty;
                 return false;
-            }           
+            }
+            
+                   
             return true;
             
         }
@@ -112,7 +119,7 @@ namespace ShagAdmin
             {
                 switch (validate)
                 {
-                    case ContactValidation.AddressEmpty: Notify("Адресс не должен быть пуст!");  break;
+                    case ContactValidation.AddressEmpty: Notify("Адресс не должен быть пуст!"); break;
                     case ContactValidation.CountryEmpty: Notify("Страна не выбрана!"); break;
                     case ContactValidation.EmailEmpty: Notify("Почтовый адресс не должен быть пуст!"); break;
                     case ContactValidation.EmailNotCorrect: Notify("Некорректный почтовый адресс!"); break;
